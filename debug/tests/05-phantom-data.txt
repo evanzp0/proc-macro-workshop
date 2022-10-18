@@ -1,0 +1,148 @@
+Field {
+    attrs: [],
+    vis: Inherited,
+    ident: Some(
+        Ident {
+            ident: "marker",
+            span: #0 bytes(2864..2870),
+        },
+    ),
+    colon_token: Some(
+        Colon,
+    ),
+    ty: Path(
+        TypePath {
+            qself: None,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident {
+                            ident: "PhantomData",
+                            span: #0 bytes(2872..2883),
+                        },
+                        arguments: AngleBracketed(
+                            AngleBracketedGenericArguments {
+                                colon2_token: None,
+                                lt_token: Lt,
+                                args: [
+                                    Type(
+                                        Path(
+                                            TypePath {
+                                                qself: None,
+                                                path: Path {
+                                                    leading_colon: None,
+                                                    segments: [
+                                                        PathSegment {
+                                                            ident: Ident {
+                                                                ident: "T",
+                                                                span: #0 bytes(2884..2885),
+                                                            },
+                                                            arguments: None,
+                                                        },
+                                                    ],
+                                                },
+                                            },
+                                        ),
+                                    ),
+                                ],
+                                gt_token: Gt,
+                            },
+                        ),
+                    },
+                ],
+            },
+        },
+    ),
+}
+Field {
+    attrs: [],
+    vis: Inherited,
+    ident: Some(
+        Ident {
+            ident: "string",
+            span: #0 bytes(2892..2898),
+        },
+    ),
+    colon_token: Some(
+        Colon,
+    ),
+    ty: Path(
+        TypePath {
+            qself: None,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident {
+                            ident: "S",
+                            span: #0 bytes(2900..2901),
+                        },
+                        arguments: None,
+                    },
+                ],
+            },
+        },
+    ),
+}
+Field {
+    attrs: [
+        Attribute {
+            pound_token: Pound,
+            style: Outer,
+            bracket_token: Bracket,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident {
+                            ident: "debug",
+                            span: #0 bytes(2909..2914),
+                        },
+                        arguments: None,
+                    },
+                ],
+            },
+            tokens: TokenStream [
+                Punct {
+                    ch: '=',
+                    spacing: Alone,
+                    span: #0 bytes(2915..2916),
+                },
+                Literal {
+                    kind: Str,
+                    symbol: "0b{:08b}",
+                    suffix: None,
+                    span: #0 bytes(2917..2927),
+                },
+            ],
+        },
+    ],
+    vis: Inherited,
+    ident: Some(
+        Ident {
+            ident: "bitmask",
+            span: #0 bytes(2933..2940),
+        },
+    ),
+    colon_token: Some(
+        Colon,
+    ),
+    ty: Path(
+        TypePath {
+            qself: None,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident {
+                            ident: "u8",
+                            span: #0 bytes(2942..2944),
+                        },
+                        arguments: None,
+                    },
+                ],
+            },
+        },
+    ),
+}

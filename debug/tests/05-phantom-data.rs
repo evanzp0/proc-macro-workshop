@@ -68,6 +68,6 @@ fn main() {
     // Does not implement Debug.
     struct NotDebug;
 
-    assert_debug::<PhantomData<NotDebug>>();
-    assert_debug::<Field<NotDebug>>();
+    // assert_debug::<PhantomData<NotDebug>>();
+    // assert_debug::<Field<NotDebug>>();
 }

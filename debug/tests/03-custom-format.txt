@@ -1,0 +1,24 @@
+Ok(
+    NameValue(
+        MetaNameValue {
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident {
+                            ident: "debug",
+                            span: #0 bytes(801..806),
+                        },
+                        arguments: None,
+                    },
+                ],
+            },
+            eq_token: Eq,
+            lit: Str(
+                LitStr {
+                    token: "0b{:08b}",
+                },
+            ),
+        },
+    ),
+)

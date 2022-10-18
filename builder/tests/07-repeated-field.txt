@@ -1,0 +1,128 @@
+List(
+    MetaList {
+        path: Path {
+            leading_colon: None,
+            segments: [
+                PathSegment {
+                    ident: Ident {
+                        ident: "blog",
+                        span: #0 bytes(95..99),
+                    },
+                    arguments: None,
+                },
+            ],
+        },
+        paren_token: Paren,
+        nested: [
+            Meta(
+                NameValue(
+                    MetaNameValue {
+                        path: Path {
+                            leading_colon: None,
+                            segments: [
+                                PathSegment {
+                                    ident: Ident {
+                                        ident: "each",
+                                        span: #0 bytes(100..104),
+                                    },
+                                    arguments: None,
+                                },
+                            ],
+                        },
+                        eq_token: Eq,
+                        lit: Str(
+                            LitStr {
+                                token: "arg",
+                            },
+                        ),
+                    },
+                ),
+            ),
+        ],
+    },
+)
+/////////////////////////////
+DeriveInput {
+    attrs: [],
+    vis: Public(
+        VisPublic {
+            pub_token: Pub,
+        },
+    ),
+    ident: Ident {
+        ident: "Foo",
+        span: #0 bytes(152..155),
+    },
+    generics: Generics {
+        lt_token: None,
+        params: [],
+        gt_token: None,
+        where_clause: None,
+    },
+    data: Struct(
+        DataStruct {
+            struct_token: Struct,
+            fields: Named(
+                FieldsNamed {
+                    brace_token: Brace,
+                    named: [
+                        Field {
+                            attrs: [
+                                Attribute {
+                                    pound_token: Pound,
+                                    style: Outer,
+                                    bracket_token: Bracket,
+                                    path: Path {
+                                        leading_colon: None,
+                                        segments: [
+                                            PathSegment {
+                                                ident: Ident {
+                                                    ident: "Bar",
+                                                    span: #0 bytes(163..166),
+                                                },
+                                                arguments: None,
+                                            },
+                                        ],
+                                    },
+                                    tokens: TokenStream [
+                                        Group {
+                                            delimiter: Parenthesis,
+                                            stream: TokenStream [
+                                                Ident {
+                                                    ident: "each",
+                                                    span: #0 bytes(167..171),
+                                                },
+                                                Punct {
+                                                    ch: '=',
+                                                    spacing: Alone,
+                                                    span: #0 bytes(171..172),
+                                                },
+                                                Literal {
+                                                    kind: Str,
+                                                    symbol: "arg",
+                                                    suffix: None,
+                                                    span: #0 bytes(172..177),
+                                                },
+                                            ],
+                                            span: #0 bytes(166..178),
+                                        },
+                                    ],
+                                },
+                            ],
+                            vis: Inherited,
+                                                    span: #0 bytes(187..190),
+                                                },
+                                                arguments: None,
+                                            },
+                                        ],
+                                    },
+                                },
+                            ),
+                        },
+                    ],
+                },
+            ),
+            semi_token: None,
+        },
+    ),
+}
